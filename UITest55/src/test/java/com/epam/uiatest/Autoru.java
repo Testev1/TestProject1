@@ -1,8 +1,5 @@
 package com.epam.uiatest;
 
-import com.epam.web.matcher.junit.Assert;
-import epam.controls.Checkbox;
-import epam.controls.Radio;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -11,11 +8,11 @@ import org.testng.annotations.Test;
 /**
  * Created by Vladimir_Provornov on 06-Oct-16.
  */
-public class Example {
+public class Autoru {
 
 //    @Test
     @Test(dataProviderClass = DProvider.class, dataProvider = "correctData")
-    public void test(boolean bool, String login1, String pass1){
+    public void autoru(boolean bool, String login1, String pass1){
 //        public void test(){
         System.setProperty("webdriver.gecko.driver", "/Projectsi/geckodriver.exe");
 //        FirefoxProfile firefoxprofile = new FirefoxProfile();
@@ -34,11 +31,11 @@ public class Example {
 //      Launch Firefox
         FirefoxDriver driver = new FirefoxDriver();
 
-//      get desired site URL
-        driver.get("https://jdi-framework.github.io/tests");
-
 //      Maximise browser window
         driver.manage().window().maximize();
+
+//      get desired site URL
+        driver.get("https://auto.ru");
 
 //      try-catch to avoid exceptions and unexpected test break
         try {
@@ -50,54 +47,39 @@ public class Example {
             String windowHandler = driver.getWindowHandle();
             driver.switchTo().window(windowHandler);
 
-//          Find authorization form handler and click on it to open login form
-            WebElement element = driver.findElement(By.className("profile-photo"));
+//          Find
+
+
+            WebElement element = driver.findElement(By.className("nav__item"));
+            element.click();
+            element.findElement(By.className("search-form__alien"));
+            element.findElement(By.linkText("С пробегом"));
             element.click();
 
-//          Find and fill Login form
-            WebElement login = driver.findElement(By.id("Login"));
-            login.sendKeys(login1);
-//            login.sendKeys("epam");
-
-//          Find and fill Password form
-            WebElement pass = driver.findElement(By.id("Password"));
-            pass.sendKeys(pass1);
-//            pass.sendKeys("1234");
-
-//          Find and press Enter button
-            WebElement enter = driver.findElement(By.xpath("//button[@class='uui-button dark-blue btn-login']"));
-            enter.click();
-
-//            WebDriverWait wait = new WebDriverWait(firefox, 10000);
-//            element = wait.until(ExpectedConditions.elementToBeClickable(By.id("id")));
-
-
-            Assert.assertTrue(driver.findElement(By.cssSelector(".logout")).isEnabled());
-            driver.navigate().to("/tests/page8.htm");
-
-            Thread.sleep(1000);
 
 
 
-            Checkbox water = new Checkbox(driver,"Water");
-            water.check();
-            Checkbox earth = new Checkbox(driver,"Earth");
-            earth.check();
-            Checkbox wind = new Checkbox(driver,"Wind");
-            wind.check();
-            Checkbox fire = new Checkbox(driver,"Fire");
-            fire.check();
-            Radio gold = new Radio(driver,"Gold");
-            gold.check();
-            Thread.sleep(1000);
-            Radio silver = new Radio(driver,"Silver");
-            silver.check();
-            Thread.sleep(1000);
-            Radio bronze = new Radio(driver,"Bronze");
-            bronze.check();
-            Thread.sleep(1000);
-            Radio selen = new Radio(driver,"Selen");
-            selen.check();
+
+//
+//            Checkbox water = new Checkbox(driver,"Water");
+//            water.check();
+//            Checkbox earth = new Checkbox(driver,"Earth");
+//            earth.check();
+//            Checkbox wind = new Checkbox(driver,"Wind");
+//            wind.check();
+//            Checkbox fire = new Checkbox(driver,"Fire");
+//            fire.check();
+//            Radio gold = new Radio(driver,"Gold");
+//            gold.check();
+//            Thread.sleep(1000);
+//            Radio silver = new Radio(driver,"Silver");
+//            silver.check();
+//            Thread.sleep(1000);
+//            Radio bronze = new Radio(driver,"Bronze");
+//            bronze.check();
+//            Thread.sleep(1000);
+//            Radio selen = new Radio(driver,"Selen");
+//            selen.check();
 
 
 

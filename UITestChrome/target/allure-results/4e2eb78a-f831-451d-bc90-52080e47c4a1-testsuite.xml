@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1477924008766" stop="1477924024881" version="1.4.5">
+    <name>AllTest</name>
+    <title>AllTest : Example[]</title>
+    <test-cases>
+        <test-case start="1477924008871" stop="1477924023439" status="passed">
+            <name>test[epam,1234]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="EPRUPETW9237"/>
+                <label name="thread" value="10556@EPRUPETW9237.main"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

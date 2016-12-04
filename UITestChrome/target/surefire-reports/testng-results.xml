@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AllTest" duration-ms="13278" started-at="2016-12-02T09:17:37Z" finished-at="2016-12-02T09:17:50Z">
+    <groups>
+    </groups>
+    <test name="Example" duration-ms="13278" started-at="2016-12-02T09:17:37Z" finished-at="2016-12-02T09:17:50Z">
+      <class name="com.epam.uiatest.Example">
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String)[pri:0, instance:com.epam.uiatest.Example@4aaae508]" name="test" duration-ms="13046" started-at="2016-12-02T12:17:37Z" data-provider="correctData" finished-at="2016-12-02T12:17:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[epam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.epam.uiatest.Example -->
+    </test> <!-- Example -->
+  </suite> <!-- AllTest -->
+</testng-results>

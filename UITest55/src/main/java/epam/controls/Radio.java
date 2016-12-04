@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 /**
  * Created by Vladimir_Provornov on 17-Oct-16.
  */
-public class Radio extends Element {
+public class  Radio extends Element {
 
 
     public Radio(WebDriver driver, String text)

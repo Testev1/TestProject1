@@ -7,10 +7,10 @@ import org.openqa.selenium.WebDriver;
 /**
  * Created by Vladimir_Provornov on 17-Oct-16.
  */
-public class Checkbox extends Element {
+public class Radio extends Element {
 
 
-    public Checkbox(WebDriver driver, String text)
+    public Radio(WebDriver driver, String text)
     {
         super(driver, By.xpath("//label[contains(., '" + text + "')]/input"));
     }

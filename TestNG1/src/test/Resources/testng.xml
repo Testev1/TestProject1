@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="AllTest">
+    <test name="Example" preserve-order="true" verbose="1" annotations="JDK">
+        <classes>
+            <class name="com.epam.uiatest.Example" >
+                <methods>
+
+                    <include name="testA" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
